@@ -14,4 +14,4 @@
 — Высота желтого блока никак не определена и полностью зависит от контента должна схлопнуться в 0 если отсутствует содержимое.
 — Можете создать неограниченное количество доп. блоков и/или враперов, если это необходимо.
 
-[![Демонстрация](/task1/img/demonstration.png)](https://drive.google.com/file/d/1uJ8OLV45BRsokLTGh1IIlCiucRi36azH/view?usp=sharing)
+[![Демонстрация](/IV/task1/img/demonstration.png)](https://drive.google.com/file/d/1uJ8OLV45BRsokLTGh1IIlCiucRi36azH/view?usp=sharing)
