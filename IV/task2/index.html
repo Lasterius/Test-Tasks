@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+    ></script>
+    <script defer src="js/saveAfterRefresh.js"></script>
+    <script defer src="js/resetForm.js"></script>
+  </head>
+  <body>
+    <main>
+      <form id="transportForm">
+        <div class="form__container">
+          <button class="button__close">
+            <img src="img/cross_457pvqedgk4c.svg" alt="cross" />
+          </button>
+          <h1 class="form__title">Транспортные средства и водители</h1>
+          <div class="form__fields">
+            <div class="form__field">
+              <label for="carNumber">Гос-номер</label>
+              <input
+                name="carNumber"
+                id="carNumber"
+                type="text"
+                required
+                placeholder="Укажите гос-номер"
+                minlength="8"
+              />
+            </div>
+            <div class="form__field">
+              <label for="modelCar">Транспортное средство</label>
+              <input
+                name="modelCar"
+                id="modelCar"
+                type="text"
+                required
+                placeholder="Транспортное средство"
+              />
+            </div>
+            <div class="form__field">
+              <label for="date">Ориентировочная дата прибытия к покупателю</label>
+              <input
+                name="date"
+                id="date"
+                type="text"
+                required
+                placeholder="Дата"
+                onfocus="(this.type='date')"
+                min="2023-07-04"
+                max="2029-12-31"
+              />
+            </div>
+            <div class="form__title2">Данные о водителе</div>
+            <div class="form__field">
+              <label for="FIO">ФИО</label>
+              <input name="FIO" id="FIO" type="text" required placeholder="Укажите ФИО водителя" />
+            </div>
+            <div class="form__field">
+              <label for="passSeries" class="pass__label">Паспортные данные</label>
+              <input
+                name="passSeries"
+                class="field__passport"
+                id="passSeries"
+                type="text"
+                required
+                placeholder="Серия"
+                minlength="4"
+              />
+              <input
+                name="passNumber"
+                class="field__passport pass__number"
+                id="passNumber"
+                type="text"
+                required
+                placeholder="Номер"
+                minlength="6"
+              />
+            </div>
+            <div class="form__field">
+              <label for="who">Кем выдан</label>
+              <input name="who" id="who" type="text" required placeholder="Кем выдан" />
+            </div>
+            <div class="form__field">
+              <label for="when">Когда выдан</label>
+              <input name="when" id="when" type="text" required placeholder="Когда выдан" />
+            </div>
+          </div>
+          <div class="form__buttons">
+            <button class="button__send">Отправить</button>
+            <button class="button__cancel" id="cancelButton">Отменить</button>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
