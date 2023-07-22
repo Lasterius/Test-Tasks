@@ -1,0 +1,26 @@
+html {
+  font-size: 17px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: black;
+  min-width: 320px;
+  padding: 50px;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid grey;
+}
+
+legend {
+  text-align: left;
+  font-size: 28px;
+}
+
+.btn__active {
+  background-color: brown;
+}
